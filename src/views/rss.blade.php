@@ -38,7 +38,7 @@
             <title><![CDATA[{!! $item['title'] !!}]]></title>
             @if (!empty($item['categories']))
 	    @foreach($item['categories'] as $category)
-            <category>{{ $category }}</category>
+            <category><![CDATA[{{ $category }}]]></category>
 	    @endforeach
             @endif
             <link>{{ $item['link'] }}</link>
